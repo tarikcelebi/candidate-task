@@ -1,0 +1,208 @@
+/* Genel container */
+.container {
+  min-height: 100vh;
+  padding: 16px;
+  background-color: #fff;
+}
+
+/* Başlık */
+.title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+/* Desktop table */
+.desktop-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 32px;
+}
+
+.desktop-table thead tr {
+  color: #444;
+  border-bottom: 1px solid #ccc;
+}
+
+.desktop-table th,
+.desktop-table td {
+  padding: 8px;
+  text-align: left;
+}
+
+.desktop-table td {
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+  color: #333;
+}
+
+.desktop-table td .working-hours {
+  font-size: 12px;
+  white-space: pre-line;
+  color: #333;
+}
+
+/* Mobile cards */
+.mobile-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 80px;
+}
+
+.mobile-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.mobile-card .branch {
+  color: #1d4ed8;
+  font-weight: bold;
+  margin-right: 6px;
+}
+
+.mobile-card .actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.mobile-card .actions button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.mobile-card .label {
+  font-weight: 500;
+  color: #666;
+  margin-right: 4px;
+}
+
+.mobile-card span,
+.mobile-card .working-hours,
+.mobile-card .phone {
+  color: #333;
+}
+
+.mobile-card .working-hours {
+  font-size: 12px;
+  white-space: pre-line;
+}
+
+.mobile-card .phone {
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.add-form {
+  margin-top: 40px;
+  background: #fafafa;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #eee;
+}
+
+.add-form h3 {
+  font-size: 16px;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+.input-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.input-row input {
+  flex: 1;
+  min-width: 140px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.input-row button {
+  background-color: #0094e9;
+  color: white;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.input-row button:hover {
+  background-color: #007fc2;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.editing-row input {
+  width: 100%;
+  padding: 4px 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+bulk-import {
+  margin-top: 40px;
+  background: #f9f9f9;
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.bulk-import h3 {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+.bulk-import textarea {
+  width: 100%;
+  height: 120px;
+  padding: 10px;
+  font-family: monospace;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  resize: vertical;
+}
+
+.bulk-import button {
+  background: #0094e9;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.bulk-import button:hover {
+  background: #007dc5;
+}
+
+@media (max-width: 767px) {
+  .desktop-table {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .mobile-cards {
+    display: none;
+  }
+}
